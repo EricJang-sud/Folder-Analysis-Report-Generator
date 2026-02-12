@@ -31,6 +31,17 @@ Automatically analyze folder contents, generate professional PDF reports with ch
 
 ---
 
+## 📋 Requirements
+
+- **Python:** 3.7 or higher
+- **Operating System:** Windows, Mac, Linux
+- **Dependencies:** 
+  - `matplotlib` (for charts)
+  - `reportlab` (for PDF generation)
+- **Email:** Gmail account for sending (recipient can be any email)
+
+---
+
 ## 📦 Installation
 
 ### **1. Install Python**
@@ -92,6 +103,33 @@ That's it! The script will:
 1. Scan your folder ✅
 2. Generate a PDF report ✅
 3. Email it to the recipient ✅
+
+---
+
+## 🚦 Sample Success Status Indicator
+
+When running the py script, you'll see the following success status indicator:
+```
+============================================================
+FOLDER ANALYSIS WORKFLOW
+============================================================
+Scanning folder: C:/Users/John/Documents
+Found 1,247 files
+
+============================================================
+GENERATING REPORT
+============================================================
+PDF report generated successfully
+
+============================================================
+SENDING EMAIL VIA GMAIL
+============================================================
+Email sent successfully to john@company.com
+
+============================================================
+WORKFLOW COMPLETED SUCCESSFULLY!
+============================================================
+```
 
 ---
 
@@ -232,17 +270,6 @@ pip install matplotlib reportlab
 
 ---
 
-## 📋 Requirements
-
-- **Python:** 3.7 or higher
-- **Operating System:** Windows, Mac, Linux
-- **Dependencies:** 
-  - `matplotlib` (for charts)
-  - `reportlab` (for PDF generation)
-- **Email:** Gmail account for sending (recipient can be any email)
-
----
-
 ## ⭐ Quick Examples
 
 ### **Example 1: Analyze Downloads Folder**
@@ -286,33 +313,6 @@ output_pdf = '/Users/john/Desktop/report.pdf'
 | **PDF Export** | Professional, formatted PDF report |
 | **Email Delivery** | Automatic email via Gmail SMTP |
 | **Unique Reports** | Each report has timestamp identifier |
-
----
-
-## 🚦 Status Indicators
-
-When running, you'll see:
-```
-============================================================
-FOLDER ANALYSIS WORKFLOW
-============================================================
-Scanning folder: C:/Users/John/Documents
-Found 1,247 files
-
-============================================================
-GENERATING REPORT
-============================================================
-PDF report generated successfully
-
-============================================================
-SENDING EMAIL VIA GMAIL
-============================================================
-Email sent successfully to john@company.com
-
-============================================================
-WORKFLOW COMPLETED SUCCESSFULLY!
-============================================================
-```
 
 ---
 
