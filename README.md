@@ -54,7 +54,7 @@ The Python tool performs the following steps:
 
 ## 💡 Use Cases
 
-### For general productivity
+#### For general productivity
 
 Improved visibility across personal or shared folders.
 - **📁 Storage Audit:** See what's taking up space
@@ -64,7 +64,7 @@ Improved visibility across personal or shared folders.
 - **📊 Team Reports:** Share folder statistics with colleagues
 - **🔍 File Discovery:** Find file types you didn't know you had
 
-### For industries
+#### For industries
 - **IT & Operations:** Monitor storage usage and identify large files quickly  
 - **Data & Analytics Teams:** Track dataset growth and storage distribution  
 - **Office & Corporate Teams:** Maintain organized shared drives  
