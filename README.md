@@ -94,7 +94,7 @@ This project reflects practical capabilities in automation, data analysis, and b
 3. Run the Python script using the Command Line Interface
 4. Receive a professional PDF report within minutes  
 
-*Full setup instructions are available in the [Technical Documentation](Technical-Documentation.md).*
+*Full setup instructions are available in [Technical Documentation](Technical-Documentation.md).*
 
 ## 📞 Author
 
