@@ -2,6 +2,13 @@
 
 A Python automation tool that transforms hours of manual file analysis into automated, professional storage reports delivered in minutes.
 
+<p align="center">
+  <img src="assets/Before-After_Folder Analysis Report Generator_Gemini.png" width="700" alt="Before and After Comparison">
+</p>
+<p align="center">
+  Image credit: Gemini
+</p>
+
 ## 💼 The Problem
 
 A project manager needs monthly storage reports across multiple folders 📁📊. Instead of focusing on core strategic tasks 🎯, hours are spent manually checking folders 🔍, calculating file sizes 💾, and compiling spreadsheets 📄.
