@@ -1,33 +1,8 @@
-# 📊 Folder Analysis Report Generator - Technical Documentation
+# Folder Analysis Report Generator - Technical Documentation
 
 Automatically analyze folder contents, generate professional PDF reports with charts and tables, and email them using Gmail.
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
-
----
-
-## 🎯 What It Does
-
-1. **Scans** any folder and all its subfolders
-2. **Analyzes** file types and sizes
-3. **Generates** a professional PDF report with:
-   - Visual charts (bar graphs)
-   - Detailed tables with statistics
-   - Total file counts and sizes
-4. **Emails** the report automatically via Gmail
-
-**Perfect for:** Storage audits, project monitoring, backup planning, file organization.
-
----
-
-## ✨ Features
-
-- 📈 **Visual charts** - Top 10 file types by frequency
-- 📋 **Detailed tables** - File counts, percentages, and total sizes
-- 📊 **Size categories** - Files grouped as <1MB, 1MB-1GB, >1GB
-- ⏱️ **Unique timestamps** - Every report has a unique identifier
-- 📧 **Email automation** - Sends reports via Gmail SMTP
-- 🎨 **Professional formatting** - Clean, readable PDF output
 
 ---
 
@@ -586,31 +561,6 @@ output_pdf = '/tmp/report.pdf'
 
 ---
 
-## 💡 Use Cases
-
-- **📁 Storage Audit:** See what's taking up space
-- **🗂️ Project Monitoring:** Track file changes over time
-- **💾 Backup Planning:** Understand what needs backing up
-- **🧹 Cleanup Guide:** Identify files to archive/delete
-- **📊 Team Reports:** Share folder statistics with colleagues
-- **🔍 File Discovery:** Find file types you didn't know you had
-
----
-
-## 🔐 Security Notes
-
-### **Why Use a Dummy Gmail Account?**
-- ✅ Protects your personal email
-- ✅ Easy to disable if compromised
-- ✅ Separates automation from personal use
-
-### **Gmail App Password Security:**
-- 🔒 Never share your App Password
-- 🔒 Can be revoked anytime at [App Passwords](https://myaccount.google.com/apppasswords)
-- 🔒 Each script should have its own App Password
-
----
-
 ## ⭐ Quick Examples
 
 ### **Example 1: Analyze Downloads Folder**
@@ -654,6 +604,20 @@ output_pdf = '/Users/john/Desktop/report.pdf'
 | **PDF Export** | Professional, formatted PDF report |
 | **Email Delivery** | Automatic email via Gmail SMTP |
 | **Unique Reports** | Each report has timestamp identifier |
+
+---
+
+## 🔐 Security Notes
+
+### **Why Use a Dummy Gmail Account?**
+- ✅ Protects your personal email
+- ✅ Easy to disable if compromised
+- ✅ Separates automation from personal use
+
+### **Gmail App Password Security:**
+- 🔒 Never share your App Password
+- 🔒 Can be revoked anytime at [App Passwords](https://myaccount.google.com/apppasswords)
+- 🔒 Each script should have its own App Password
 
 ---
 
