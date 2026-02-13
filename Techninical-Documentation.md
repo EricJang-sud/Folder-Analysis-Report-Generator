@@ -276,6 +276,120 @@ output_pdf = '/home/john/Desktop/report.pdf'
 
 ## 🆘 Troubleshooting
 
+### **Understanding Raw Strings vs Regular Strings (Windows Users)**
+
+**The Problem:**
+Windows paths use backslashes `\`, but backslashes are special characters in Python strings.
+
+**Three Solutions:**
+
+#### **Option 1: Forward Slashes (Recommended - Simplest)**
+```python
+# ✅ RECOMMENDED - Works on all platforms
+target_folder = 'C:/Users/John/Documents'
+output_pdf = 'C:/Users/John/Desktop/report.pdf'
+```
+**Why it works:** Python and Windows both accept forward slashes in paths.
+
+#### **Option 2: Raw Strings (Use r prefix)**
+```python
+# ✅ Raw string - backslashes treated literally
+target_folder = r'C:\Users\John\Documents'
+output_pdf = r'C:\Users\John\Desktop\report.pdf'
+
+# Notice the 'r' before the quote - this makes it a "raw string"
+```
+**What the 'r' does:** Tells Python to treat backslashes as literal characters, not escape sequences.
+
+#### **Option 3: Double Backslashes**
+```python
+# ✅ Escape backslashes by doubling them
+target_folder = 'C:\\Users\\John\\Documents'
+output_pdf = 'C:\\Users\\John\\Desktop\\report.pdf'
+
+# Each \\ becomes a single \ in the actual path
+```
+
+**Comparison:**
+
+| Method | Example | Pros | Cons |
+|--------|---------|------|------|
+| **Forward Slashes** | `'C:/Users/John/Documents'` | ✅ Simple<br>✅ Works everywhere<br>✅ Easy to type | None |
+| **Raw Strings** | `r'C:\Users\John\Documents'` | ✅ Looks like Windows paths<br>✅ Copy-paste from Explorer | ⚠️ Must remember 'r' prefix |
+| **Double Backslashes** | `'C:\\Users\\John\\Documents'` | ✅ No prefix needed | ❌ Tedious to type<br>❌ Easy to forget one |
+
+**Examples That Won't Work:**
+
+```python
+# ❌ WRONG - Single backslashes without 'r' prefix
+target_folder = 'C:\Users\John\Documents'
+# Python interprets \U as Unicode escape, causes error
+
+# ❌ WRONG - Common mistake
+target_folder = 'C:\New Folder\Data'
+# \N is interpreted as escape sequence, causes error
+
+# ❌ WRONG - Mixing styles
+target_folder = 'C:/Users\John\Documents'
+# Inconsistent, confusing
+```
+
+**Examples That Work:**
+
+```python
+# ✅ CORRECT - Forward slashes (RECOMMENDED)
+target_folder = 'C:/Users/John/Documents'
+target_folder = 'C:/Program Files/MyApp/data'
+target_folder = 'D:/Backups/2024/February'
+
+# ✅ CORRECT - Raw string
+target_folder = r'C:\Users\John\Documents'
+target_folder = r'C:\Program Files\MyApp\data'
+target_folder = r'D:\Backups\2024\February'
+
+# ✅ CORRECT - Double backslashes
+target_folder = 'C:\\Users\\John\\Documents'
+target_folder = 'C:\\Program Files\\MyApp\\data'
+target_folder = 'D:\\Backups\\2024\\February'
+```
+
+**Quick Copy-Paste Guide:**
+
+If you copy a path from Windows File Explorer:
+```
+C:\Users\John\Documents
+```
+
+Transform it using one of these methods:
+
+**Method 1 (Easiest):**
+```python
+# Replace \ with /
+target_folder = 'C:/Users/John/Documents'
+```
+
+**Method 2:**
+```python
+# Add r before the opening quote
+target_folder = r'C:\Users\John\Documents'
+```
+
+**Method 3:**
+```python
+# Double every backslash
+target_folder = 'C:\\Users\\John\\Documents'
+```
+
+**Mac/Linux Users:**
+You don't have this issue! Just use paths as-is:
+```python
+# Mac
+target_folder = '/Users/john/Documents'
+
+# Linux
+target_folder = '/home/john/Documents'
+```
+
 ### **"pip is not recognized as an internal or external command" (Windows)**
 **Problem:** pip not in system PATH
 
