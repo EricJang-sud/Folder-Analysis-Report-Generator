@@ -4,19 +4,15 @@ A Python automation tool that transforms hours of manual file analysis into auto
 
 ## 💼 The Problem
 
-A project manager needs monthly storage reports across multiple folders 📁📊.  
-
-Instead of focusing on strategic tasks 🎯, hours are spent manually checking folders 🔍, calculating file sizes 💾, and compiling spreadsheets 📄.
+A project manager needs monthly storage reports across multiple folders 📁📊. Instead of focusing on strategic tasks 🎯, hours are spent manually checking folders 🔍, calculating file sizes 💾, and compiling spreadsheets 📄.
 
 **The Conseuquence?** Incomplete insights ❗ and delayed decisions ⏳.
 
 ## ✨ The Solution
 
-This automation tool scans folders, analyzes file types and sizes, and automatically generates a professional PDF report delivered via email — reducing manual analysis to a single run.
+This Python automation tool scans folders, analyzes file types and sizes, and automatically generates a professional PDF report delivered via email, **reducing multi-step manual analysis to a single run**.
 
 ## 📈 Impact: Before vs After
-
-**Result:** Significant time savings and faster, data-driven storage decisions.
 
 |                     | Manual Process | Automated Tool |
 |---------------------|---------------|---------------|
@@ -25,27 +21,47 @@ This automation tool scans folders, analyzes file types and sizes, and automatic
 | Reporting quality   | Inconsistent  | Professional & standardized |
 | Delivery time       | Delayed       | Instant |
 
+**Result:** Significant time savings and faster, data-driven storage decisions.
+
 ## 🔧 About The Tool
 
-- Automatically scans folders and subfolders  
-- Analyzes file types, counts, and storage consumption  
-- Generates visual PDF reports with charts and tables  
-- Sends reports directly to stakeholders via email  
+The Python tool performs the following steps:
 
-## 💼 Business Use Cases
+1. **Scans** any folder and all its subfolders
+2. **Analyzes** file types and sizes
+3. **Generates** a professional PDF report with:
+   - Visual charts (bar graphs)
+   - Detailed tables with statistics
+   - Total file counts and sizes
+4. **Emails** the report automatically via Gmail
 
+**Perfect for:** Storage audits, project monitoring, backup planning, file organization.
+
+## ⚡ Key Features
+
+- 📈 **Visual charts** - Top 10 file types by frequency
+- 📋 **Detailed tables** - File counts, percentages, and total sizes
+- 📧 **Email automation** - Email delivery for easy stakeholder sharing
+- 🎨 **Professional formatting** - Clean, readable PDF output
+- 🌍 ** Cross-platform** - Windows, macOS, Linux compatible
+
+## 💡 Use Cases
+
+### For general productivity
+
+Improved visibility across personal or shared folders.
+- **📁 Storage Audit:** See what's taking up space
+- **🗂️ Project Monitoring:** Track file changes over time
+- **💾 Backup Planning:** Understand what needs backing up
+- **🧹 Cleanup Guide:** Identify files to archive/delete
+- **📊 Team Reports:** Share folder statistics with colleagues
+- **🔍 File Discovery:** Find file types you didn't know you had
+
+### For industries
 - **IT & Operations:** Monitor storage usage and identify large files quickly  
 - **Data & Analytics Teams:** Track dataset growth and storage distribution  
 - **Office & Corporate Teams:** Maintain organized shared drives  
 - **Creative & Media Teams:** Manage large video, image, and production files  
-- **General Productivity:** Improve visibility across personal or shared folders  
-
-## ⚡ Key Features
-
-- Automated folder analysis and reporting  
-- Visual charts and professional PDF output  
-- Email delivery for easy stakeholder sharing  
-- Cross-platform compatibility (Windows, Mac, Linux)  
 
 ## 📊 Proof of Results
 
