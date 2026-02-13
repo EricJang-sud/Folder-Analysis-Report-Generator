@@ -49,8 +49,8 @@ use_ssl = False  # Gmail uses TLS on port 587
 # NOTE: The recipient email (specified above) can be ANY email platform
 # (Gmail, Outlook, Yahoo, etc.) - only the SENDER must be Gmail.
 
-# ============================================================================
-# END OF INPUT PARAMETERS
+# ===== END OF USER INPUT ====================================================
+# Do not modify code below unless you understand the implementation.
 # ============================================================================
 
 import os
