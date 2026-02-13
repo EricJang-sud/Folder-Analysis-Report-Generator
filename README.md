@@ -1,10 +1,10 @@
-# 📊 Folder Analysis Report Generator
+# Folder Analysis Report Generator
 
 A Python automation tool that transforms hours of manual file analysis into automated, professional storage reports delivered in minutes.
 
 ## 💼 The Problem
 
-A project manager needs monthly storage reports across multiple folders 📁📊. Instead of focusing on strategic tasks 🎯, hours are spent manually checking folders 🔍, calculating file sizes 💾, and compiling spreadsheets 📄.
+A project manager needs monthly storage reports across multiple folders 📁📊. Instead of focusing on core strategic tasks 🎯, hours are spent manually checking folders 🔍, calculating file sizes 💾, and compiling spreadsheets 📄.
 
 **The Conseuquence?** Incomplete insights ❗ and delayed decisions ⏳.
 
@@ -72,10 +72,13 @@ Example output includes:
 
 ## 🎯 Roles & Skills Demonstrated
 
-- Automation and process improvement  
-- Data analysis and reporting  
-- Business impact measurement and ROI thinking  
-- Clear documentation and stakeholder-focused design  
+This project reflects practical capabilities in automation, data analysis, and business-focused problem-solving.
+
+- **Automation and process improvement:** Designed an automated workflow that replaces repetitive manual storage analysis tasks with a consistent, scalable solution.  
+- **Data analysis and reporting:** Collected and summarized file system data into clear visual reports for faster decision-making.  
+- **Business impact measurement and ROI thinking:** Quantified time savings and operational efficiency improvements, helping stakeholders focus on high-level tasks. 
+- **Clear documentation and stakeholder-focused design:** Created user-friendly instructions and report outputs that are accessible to both technical and non-technical audiences.  
+
 
 ## 🚀 Quick Start
 
