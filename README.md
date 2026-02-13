@@ -43,7 +43,7 @@ The Python tool performs the following steps:
 - 📋 **Detailed tables** - File counts, percentages, and total sizes
 - 📧 **Email automation** - Email delivery for easy stakeholder sharing
 - 🎨 **Professional formatting** - Clean, readable PDF output
-- 🌍 ** Cross-platform** - Windows, macOS, Linux compatible
+- 🌍 **Cross-platform** - Windows, macOS, Linux compatible
 
 ## 💡 Use Cases
 
@@ -84,7 +84,7 @@ Example output includes:
 3. Run the Python script using the Command Line Interface
 4. Receive a professional PDF report within minutes  
 
-*Full setup instructions are available in the technical documentation.*
+*Full setup instructions are available in the [Technical Documentation](Technical-Documentation.md).*
 
 ## 📞 Author
 
@@ -97,7 +97,3 @@ Example output includes:
 Built with Python's excellent standard library. No external dependencies required for core functionality.
 
 **⭐ If you find this useful, please consider starring the repository!**
-
----
-
-**Ready to implement?** See [Technical Documentation](Technical-Documentation.md) for complete setup instructions.
