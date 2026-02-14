@@ -1,4 +1,4 @@
-# 📊 Folder Analysis Report Generator
+# Folder Analysis Report Generator - Technical Documentation
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 
