@@ -19,19 +19,34 @@
 
 ### **1. Install Python**
 
-**Windows:**
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+```bash
 - Download Python 3.7+ from [python.org](https://www.python.org/downloads/)
 - **IMPORTANT:** During installation, check ✅ "Add Python to PATH"
 - Click "Install Now"
+```
+</details>
 
-**Mac:**
+<details>
+<summary><b>🍎 Mac</b></summary>
+
+```bash
 - **Option 1:** Download from [python.org](https://www.python.org/downloads/)
 - **Option 2:** Use Homebrew: `brew install python3`
+```
+</details>
 
-**Linux:**
+<details>
+<summary><b>🐧 Linux</b></summary>
+
+```bash
 - Most distributions come with Python pre-installed
 - **Ubuntu/Debian:** `sudo apt-get install python3 python3-pip`
 - **Fedora:** `sudo dnf install python3 python3-pip`
+```
+</details>
 
 ### **2. Install Dependencies**
 
