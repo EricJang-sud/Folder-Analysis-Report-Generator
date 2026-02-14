@@ -1,4 +1,4 @@
-# Folder Analysis Report Generator - Technical Documentation
+# 📊 Folder Analysis Report Generator
 
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 
@@ -13,28 +13,45 @@
   - `reportlab` (for PDF generation)
 - **Email:** Gmail account for sending (recipient can be any email)
 
----
-
 ## 📦 Installation
 
 ### **1. Install Python**
+
+**Windows:**
+- Download Python 3.7+ from [python.org](https://www.python.org/downloads/)
+- **IMPORTANT:** During installation, check ✅ "Add Python to PATH"
+- Click "Install Now"
+
+**Mac:**
+- **Option 1:** Download from [python.org](https://www.python.org/downloads/)
+- **Option 2:** Use Homebrew: `brew install python3`
+
+**Linux:**
+- Most distributions come with Python pre-installed
+- **Ubuntu/Debian:** `sudo apt-get install python3 python3-pip`
+- **Fedora:** `sudo dnf install python3 python3-pip`
+
+### **2. Install Dependencies**
 
 <details>
 <summary><b>🪟 Windows</b></summary>
 
 ```bash
-- Download Python 3.7+ from [python.org](https://www.python.org/downloads/)
-- **IMPORTANT:** During installation, check ✅ "Add Python to PATH"
-- Click "Install Now"
+pip install matplotlib reportlab
+
+# If pip doesn't work:
+python -m pip install matplotlib reportlab
 ```
 </details>
 
 <details>
-<summary><b>🍎 Mac</b></summary>
+<summary><b>🍎 macOS</b></summary>
 
 ```bash
-- **Option 1:** Download from [python.org](https://www.python.org/downloads/)
-- **Option 2:** Use Homebrew: `brew install python3`
+pip3 install matplotlib reportlab
+
+# If you get permission errors:
+pip3 install --user matplotlib reportlab
 ```
 </details>
 
@@ -42,43 +59,20 @@
 <summary><b>🐧 Linux</b></summary>
 
 ```bash
-- Most distributions come with Python pre-installed
-- **Ubuntu/Debian:** `sudo apt-get install python3 python3-pip`
-- **Fedora:** `sudo dnf install python3 python3-pip`
-```
-</details>
-
-### **2. Install Dependencies**
-
-**Windows:**
-```bash
-pip install matplotlib reportlab
-# If pip doesn't work:
-python -m pip install matplotlib reportlab
-```
-
-**Mac:**
-```bash
 pip3 install matplotlib reportlab
-# If you get permission errors:
-pip3 install --user matplotlib reportlab
-```
 
-**Linux:**
-```bash
-pip3 install matplotlib reportlab
 # Or use system package manager (easier):
 # Ubuntu/Debian:
 sudo apt-get install python3-matplotlib python3-reportlab
+
 # Fedora:
 sudo dnf install python3-matplotlib
 pip3 install reportlab
 ```
+</details>
 
 ### **3. Download the Script**
 Download `folder_report_generator.py` from this repository.
-
----
 
 ## 🚀 Quick Start
 
@@ -118,7 +112,9 @@ output_pdf = 'C:/Users/YourName/Desktop/report.pdf'
 
 ### **Step 3: Run the Script**
 
-**Windows:**
+<details>
+<summary><b>🪟 Windows</b></summary>
+
 ```bash
 # Method 1: Command Prompt
 python folder_report_generator.py
@@ -129,15 +125,21 @@ python folder_report_generator.py
 # Method 3: PowerShell
 python folder_report_generator.py
 ```
+</details>
 
-**Mac:**
+<details>
+<summary><b>🍎 macOS</b></summary>
+
 ```bash
 # Open Terminal and navigate to script location
 cd /Users/yourname/Downloads
 python3 folder_report_generator.py
 ```
+</details>
 
-**Linux:**
+<details>
+<summary><b>🐧 Linux</b></summary>
+
 ```bash
 # Open Terminal and navigate to script location
 cd /home/yourname/Downloads
@@ -147,17 +149,16 @@ python3 folder_report_generator.py
 chmod +x folder_report_generator.py
 ./folder_report_generator.py
 ```
+</details>
 
 That's it! The script will:
 1. Scan your folder ✅
 2. Generate a PDF report ✅
 3. Email it to the recipient ✅
 
----
+## 🚦 Success Status Indicators
 
-## 🚦 Success Status Indicator
-
-When running, you'll see the following example of a success status indicator:
+When running the script, you'll see the following sample of success status indicators:
 ```
 ============================================================
 FOLDER ANALYSIS WORKFLOW
@@ -180,7 +181,6 @@ WORKFLOW COMPLETED SUCCESSFULLY!
 ============================================================
 ```
 
----
 
 ## 📊 Sample Report Output
 
@@ -226,8 +226,6 @@ Section 2: File Size Distribution
 └────────────────────────────────────────────────┘
 ```
 
----
-
 ## 🔧 Configuration Options
 
 ### **Required Settings:**
@@ -242,32 +240,231 @@ Section 2: File Size Distribution
 
 ### **Path Examples:**
 
-**Windows:**
+<details>
+<summary><b>🪟 Windows</b></summary>
+
 ```python
 target_folder = 'C:/Users/John/Documents'
 output_pdf = 'C:/Users/John/Desktop/report.pdf'
 ```
+</details>
 
-**Mac:**
+<details>
+<summary><b>🍎 macOS</b></summary>
+
 ```python
 target_folder = '/Users/john/Documents'
 output_pdf = '/Users/john/Desktop/report.pdf'
 ```
+</details>
 
-**Linux:**
+<details>
+<summary><b>🐧 Linux</b></summary>
+
 ```python
 target_folder = '/home/john/Documents'
 output_pdf = '/home/john/Desktop/report.pdf'
 ```
-
----
+</details>
 
 ## 🆘 Troubleshooting
 
+### **"pip is not recognized" / "command not found: pip"**
+
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+**Problem:** pip not in system PATH
+
+**Solutions:**
+```bash
+# Option 1: Use python -m pip
+python -m pip install matplotlib reportlab
+
+# Option 2: Reinstall Python
+# Download from python.org and check "Add Python to PATH"
+
+# Option 3: Add to PATH manually
+# Search "Environment Variables" → Edit PATH → Add Python Scripts folder
+```
+</details>
+
+<details>
+<summary><b>🍎 macOS</b></summary>
+
+**Problem:** pip or pip3 not installed
+
+**Solutions:**
+```bash
+# Option 1: Use pip3
+pip3 install matplotlib reportlab
+
+# Option 2: Use python3 -m pip
+python3 -m pip install matplotlib reportlab
+
+# Option 3: Install pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+```
+</details>
+
+<details>
+<summary><b>🐧 Linux</b></summary>
+
+**Problem:** pip or pip3 not installed
+
+**Solutions:**
+```bash
+# Ubuntu/Debian
+sudo apt-get install python3-pip
+pip3 install matplotlib reportlab
+
+# Fedora
+sudo dnf install python3-pip
+pip3 install matplotlib reportlab
+```
+</details>
+
+### **"Username and Password not accepted"**
+**All Platforms:**
+- ❌ Using regular Gmail password
+- ✅ Use Gmail App Password (16 characters)
+- ✅ Enable 2-Factor Authentication first
+
+### **"ModuleNotFoundError: No module named 'matplotlib'"**
+
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+```bash
+# Standard install
+pip install matplotlib reportlab
+
+# If that doesn't work
+python -m pip install matplotlib reportlab
+
+# Run as Administrator
+# Right-click Command Prompt → Run as Administrator
+pip install matplotlib reportlab
+```
+</details>
+
+<details>
+<summary><b>🍎 macOS</b></summary>
+
+```bash
+# Standard install
+pip3 install matplotlib reportlab
+
+# With user flag (if permission denied)
+pip3 install --user matplotlib reportlab
+
+# Using Homebrew Python
+brew install python3
+pip3 install matplotlib reportlab
+```
+</details>
+
+<details>
+<summary><b>🐧 Linux</b></summary>
+
+```bash
+# Option 1: System packages (recommended)
+sudo apt-get install python3-matplotlib python3-reportlab  # Ubuntu/Debian
+sudo dnf install python3-matplotlib; pip3 install reportlab  # Fedora
+
+# Option 2: pip install
+pip3 install matplotlib reportlab
+
+# Option 3: With --break-system-packages (newer Linux)
+pip3 install matplotlib reportlab --break-system-packages
+```
+</details>
+
+### **"Permission denied" when scanning folders**
+
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+```bash
+# Run Command Prompt as Administrator
+# Right-click Command Prompt → Run as Administrator
+python folder_report_generator.py
+```
+</details>
+
+<details>
+<summary><b>🍎 macOS</b></summary>
+
+```bash
+# Grant Full Disk Access
+# System Preferences → Security & Privacy → Privacy → Full Disk Access
+# Add Terminal or your Python IDE
+
+# Or use a folder you own
+target_folder = '/Users/yourname/Documents'
+```
+</details>
+
+<details>
+<summary><b>🐧 Linux</b></summary>
+
+```bash
+# Use sudo only if analyzing system folders
+sudo python3 folder_report_generator.py
+
+# Better: Choose a folder you own
+target_folder = '/home/yourname/Documents'
+```
+</details>
+
+### **"FileNotFoundError" - Folder doesn't exist**
+
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+```python
+# ✅ Use forward slashes
+target_folder = 'C:/Users/John/Documents'
+
+# ✅ Or double backslashes
+target_folder = 'C:\\Users\\John\\Documents'
+
+# ❌ Don't use single backslashes
+target_folder = 'C:\Users\John\Documents'  # Wrong!
+```
+</details>
+
+<details>
+<summary><b>🍎 macOS</b></summary>
+
+```python
+# ✅ Full path starting with /Users
+target_folder = '/Users/john/Documents'
+
+# ✅ Can also use home directory
+target_folder = '/Users/john/Desktop'
+```
+</details>
+
+<details>
+<summary><b>🐧 Linux</b></summary>
+
+```python
+# ✅ Full path starting with /home
+target_folder = '/home/john/Documents'
+
+# ✅ Network mounts
+target_folder = '/mnt/shared/projects'
+```
+</details>
+
 ### **Understanding Raw Strings vs Regular Strings (Windows Users)**
 
-**The Problem:**
-Windows paths use backslashes `\`, but backslashes are special characters in Python strings.
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+**The Problem:** Windows paths use backslashes `\`, but backslashes are special characters in Python strings.
 
 **Three Solutions:**
 
@@ -367,8 +564,11 @@ target_folder = r'C:\Users\John\Documents'
 # Double every backslash
 target_folder = 'C:\\Users\\John\\Documents'
 ```
+</details>
 
-**Mac/Linux Users:**
+<details>
+<summary><b>🍎 macOS/🐧 Linux</b></summary>
+
 You don't have this issue! Just use paths as-is:
 ```python
 # Mac
@@ -377,159 +577,13 @@ target_folder = '/Users/john/Documents'
 # Linux
 target_folder = '/home/john/Documents'
 ```
-
-### **"pip is not recognized as an internal or external command" (Windows)**
-**Problem:** pip not in system PATH
-
-**Solutions:**
-```bash
-# Option 1: Use python -m pip
-python -m pip install matplotlib reportlab
-
-# Option 2: Reinstall Python
-# Download from python.org and check "Add Python to PATH"
-
-# Option 3: Add to PATH manually
-# Search "Environment Variables" → Edit PATH → Add Python Scripts folder
-```
-
-### **"command not found: pip" (Mac/Linux)**
-**Problem:** pip or pip3 not installed
-
-**Mac Solutions:**
-```bash
-# Option 1: Use pip3
-pip3 install matplotlib reportlab
-
-# Option 2: Use python3 -m pip
-python3 -m pip install matplotlib reportlab
-
-# Option 3: Install pip
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
-```
-
-**Linux Solutions:**
-```bash
-# Ubuntu/Debian
-sudo apt-get install python3-pip
-pip3 install matplotlib reportlab
-
-# Fedora
-sudo dnf install python3-pip
-pip3 install matplotlib reportlab
-```
-
-### **"Username and Password not accepted"**
-**All Platforms:**
-- ❌ Using regular Gmail password
-- ✅ Use Gmail App Password (16 characters)
-- ✅ Enable 2-Factor Authentication first
-
-### **"ModuleNotFoundError: No module named 'matplotlib'"**
-
-**Windows:**
-```bash
-# Standard install
-pip install matplotlib reportlab
-
-# If that doesn't work
-python -m pip install matplotlib reportlab
-
-# Run as Administrator
-# Right-click Command Prompt → Run as Administrator
-pip install matplotlib reportlab
-```
-
-**Mac:**
-```bash
-# Standard install
-pip3 install matplotlib reportlab
-
-# With user flag (if permission denied)
-pip3 install --user matplotlib reportlab
-
-# Using Homebrew Python
-brew install python3
-pip3 install matplotlib reportlab
-```
-
-**Linux:**
-```bash
-# Option 1: System packages (recommended)
-sudo apt-get install python3-matplotlib python3-reportlab  # Ubuntu/Debian
-sudo dnf install python3-matplotlib; pip3 install reportlab  # Fedora
-
-# Option 2: pip install
-pip3 install matplotlib reportlab
-
-# Option 3: With --break-system-packages (newer Linux)
-pip3 install matplotlib reportlab --break-system-packages
-```
-
-### **"Permission denied" when scanning folders**
-
-**Windows:**
-```bash
-# Run Command Prompt as Administrator
-# Right-click Command Prompt → Run as Administrator
-python folder_report_generator.py
-```
-
-**Mac:**
-```bash
-# Grant Full Disk Access
-# System Preferences → Security & Privacy → Privacy → Full Disk Access
-# Add Terminal or your Python IDE
-
-# Or use a folder you own
-target_folder = '/Users/yourname/Documents'
-```
-
-**Linux:**
-```bash
-# Use sudo only if analyzing system folders
-sudo python3 folder_report_generator.py
-
-# Better: Choose a folder you own
-target_folder = '/home/yourname/Documents'
-```
-
-### **"FileNotFoundError" - Folder doesn't exist**
-
-**Windows:**
-```python
-# ✅ Use forward slashes
-target_folder = 'C:/Users/John/Documents'
-
-# ✅ Or double backslashes
-target_folder = 'C:\\Users\\John\\Documents'
-
-# ❌ Don't use single backslashes
-target_folder = 'C:\Users\John\Documents'  # Wrong!
-```
-
-**Mac:**
-```python
-# ✅ Full path starting with /Users
-target_folder = '/Users/john/Documents'
-
-# ✅ Can also use home directory
-target_folder = '/Users/john/Desktop'
-```
-
-**Linux:**
-```python
-# ✅ Full path starting with /home
-target_folder = '/home/john/Documents'
-
-# ✅ Network mounts
-target_folder = '/mnt/shared/projects'
-```
+</details>
 
 ### **Output PDF location issues**
 
-**Windows:**
+<details>
+<summary><b>🪟 Windows</b></summary>
+
 ```python
 # ✅ Desktop
 output_pdf = 'C:/Users/YourName/Desktop/report.pdf'
@@ -540,8 +594,11 @@ output_pdf = 'C:/Users/YourName/Documents/report.pdf'
 # ✅ Temp folder (always works)
 output_pdf = 'C:/Temp/report.pdf'
 ```
+</details>
 
-**Mac:**
+<details>
+<summary><b>🍎 macOS</b></summary>
+
 ```python
 # ✅ Desktop
 output_pdf = '/Users/yourname/Desktop/report.pdf'
@@ -552,8 +609,11 @@ output_pdf = '/Users/yourname/Documents/report.pdf'
 # ✅ Downloads
 output_pdf = '/Users/yourname/Downloads/report.pdf'
 ```
+</details>
 
-**Linux:**
+<details>
+<summary><b>🐧 Linux</b></summary>
+
 ```python
 # ✅ Desktop
 output_pdf = '/home/yourname/Desktop/report.pdf'
@@ -564,6 +624,7 @@ output_pdf = '/home/yourname/report.pdf'
 # ✅ Tmp (always writable)
 output_pdf = '/tmp/report.pdf'
 ```
+</details>
 
 ### **Email sent but not received**
 **All Platforms:**
@@ -572,7 +633,17 @@ output_pdf = '/tmp/report.pdf'
 - Wait a few minutes (delays can happen)
 - Gmail daily sending limit: ~100-500 emails
 
----
+## 🔐 Security Notes
+
+### **Why Use a Dummy Gmail Account?**
+- ✅ Protects your personal email
+- ✅ Easy to disable if compromised
+- ✅ Separates automation from personal use
+
+### **Gmail App Password Security:**
+- 🔒 Never share your App Password
+- 🔒 Can be revoked anytime at [App Passwords](https://myaccount.google.com/apppasswords)
+- 🔒 Each script should have its own App Password
 
 ## ⭐ Quick Examples
 
@@ -603,8 +674,6 @@ sender_password = 'abcd efgh ijkl mnop'
 output_pdf = '/Users/john/Desktop/report.pdf'
 ```
 
----
-
 ## 🎯 Features at a Glance
 
 | Feature | Details |
@@ -618,25 +687,10 @@ output_pdf = '/Users/john/Desktop/report.pdf'
 | **Email Delivery** | Automatic email via Gmail SMTP |
 | **Unique Reports** | Each report has timestamp identifier |
 
----
-
-## 🔐 Security Notes
-
-### **Why Use a Dummy Gmail Account?**
-- ✅ Protects your personal email
-- ✅ Easy to disable if compromised
-- ✅ Separates automation from personal use
-
-### **Gmail App Password Security:**
-- 🔒 Never share your App Password
-- 🔒 Can be revoked anytime at [App Passwords](https://myaccount.google.com/apppasswords)
-- 🔒 Each script should have its own App Password
-
----
-
 ## 🖥️ Platform-Specific Quick Reference
 
-### **Windows Users**
+<details>
+<summary><b>🪟 Windows Users</b></summary>
 
 **Installation:**
 ```bash
@@ -660,8 +714,10 @@ python folder_report_generator.py
 - ✅ Use `python -m pip` if pip doesn't work
 - ✅ Run Command Prompt as Administrator for permissions
 - ✅ Use forward slashes `/` in paths (not backslashes `\`)
+</details>
 
-### **Mac Users**
+<details>
+<summary><b>🍎 macOS Users</b></summary>
 
 **Installation:**
 ```bash
@@ -686,8 +742,10 @@ python3 folder_report_generator.py
 - ✅ Use `python3` instead of `python`
 - ✅ Grant Full Disk Access in System Preferences if needed
 - ✅ Use `--user` flag if permission denied
+</details>
 
-### **Linux Users**
+<details>
+<summary><b>🐧 Linux Users</b></summary>
 
 **Installation:**
 ```bash
@@ -716,6 +774,7 @@ python3 folder_report_generator.py
 - ✅ Use `pip3` with `--break-system-packages` on newer distros
 - ✅ Use `sudo` only if analyzing system folders
 - ✅ Choose folders you own to avoid permission issues
+</details>
 
 ---
 
