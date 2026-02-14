@@ -1,7 +1,5 @@
 # Folder Analysis Report Generator - Technical Documentation
 
-Automatically analyze folder contents, generate professional PDF reports with charts and tables, and email them using Gmail.
-
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 
 ---
