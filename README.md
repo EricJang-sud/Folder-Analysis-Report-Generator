@@ -102,8 +102,6 @@ This project reflects practical capabilities in automation, data analysis, and b
 2. **Email:** thericman05@gmail.com
 3. **LinkedIn:** Connect me [www.linkedin.com](https://www.linkedin.com/in/eric-jang666/)
 
-## 🙏 Acknowledgments
-
-Built with Python's excellent standard library. No external dependencies required for core functionality.
+---
 
 **⭐ If you find this useful, please consider starring the repository!**
