@@ -21,13 +21,13 @@ This Python automation tool scans folders, analyzes file types and sizes, and au
 
 **How it works**
 
-1. **Scans** any folder and all its subfolders.
-2. **Analyzes** file types and sizes.
-3. **Generates** a professional PDF report with:
+1. 🔍 **Scans** any folder and all its subfolders.
+2. 📊 **Analyzes** file types and sizes.
+3. 📝 **Generates** a professional PDF report with:
    - Visual charts (bar graphs).
    - Detailed tables with statistics.
    - Total file counts and sizes.
-4. **Emails** the report automatically via Gmail.
+4. 📩 **Emails** the report automatically via Gmail.
 
 >**Perfect for:** Storage audits, project monitoring, backup planning, file organization.
 
