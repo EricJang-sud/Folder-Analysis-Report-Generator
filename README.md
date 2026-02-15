@@ -1,6 +1,6 @@
 # Folder Analysis Report Generator
 
-A Python automation tool that transforms hours of manual file analysis into automated, professional storage reports delivered in minutes.
+A Python automation tool that transforms hours of manual file analysis into automated, professional storage reports delivered in seconds.
 
 <p align="center">
   <img src="assets/Before-After_Folder Analysis Report Generator_Gemini.png" width="700" alt="Before and After Comparison">
