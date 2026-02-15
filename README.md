@@ -19,6 +19,26 @@ A project manager needs monthly storage reports across multiple folders 📁📊
 
 This Python automation tool scans folders, analyzes file types and sizes, and automatically generates a professional PDF report delivered via email, **reducing multi-step manual analysis to a single run**.
 
+**How it works**
+
+1. **Scans** any folder and all its subfolders.
+2. **Analyzes** file types and sizes.
+3. **Generates** a professional PDF report with:
+   - Visual charts (bar graphs).
+   - Detailed tables with statistics.
+   - Total file counts and sizes.
+4. **Emails** the report automatically via Gmail.
+
+>**Perfect for:** Storage audits, project monitoring, backup planning, file organization.
+
+**Key Features**
+
+- 📈 **Visual charts** - Top 10 file types by frequency.
+- 📋 **Detailed tables** - File counts, percentages, and total sizes.
+- 📧 **Email automation** - Email delivery for easy stakeholder sharing.
+- 🎨 **Professional formatting** - Clean, readable PDF output.
+- 🌍 **Cross-platform** - Windows, macOS, Linux compatible.
+
 ## 📈 Impact: Before vs After
 
 |                     | Manual Process | Automated Tool |
@@ -30,45 +50,23 @@ This Python automation tool scans folders, analyzes file types and sizes, and au
 
 **Result:** Significant time savings and faster, data-driven storage decisions.
 
-## 🔧 About The Tool
-
-The Python tool performs the following steps:
-
-1. **Scans** any folder and all its subfolders
-2. **Analyzes** file types and sizes
-3. **Generates** a professional PDF report with:
-   - Visual charts (bar graphs)
-   - Detailed tables with statistics
-   - Total file counts and sizes
-4. **Emails** the report automatically via Gmail
-
-**Perfect for:** Storage audits, project monitoring, backup planning, file organization.
-
-## ⚡ Key Features
-
-- 📈 **Visual charts** - Top 10 file types by frequency
-- 📋 **Detailed tables** - File counts, percentages, and total sizes
-- 📧 **Email automation** - Email delivery for easy stakeholder sharing
-- 🎨 **Professional formatting** - Clean, readable PDF output
-- 🌍 **Cross-platform** - Windows, macOS, Linux compatible
-
 ## 💡 Use Cases
 
 #### For general productivity
 
 Improved visibility across personal or shared folders.
-- **📁 Storage Audit:** See what's taking up space
-- **🗂️ Project Monitoring:** Track file changes over time
-- **💾 Backup Planning:** Understand what needs backing up
-- **🧹 Cleanup Guide:** Identify files to archive/delete
-- **📊 Team Reports:** Share folder statistics with colleagues
-- **🔍 File Discovery:** Find file types you didn't know you had
+- **📁 Storage Audit:** See what's taking up space.
+- **🗂️ Project Monitoring:** Track file changes over time.
+- **💾 Backup Planning:** Understand what needs backing up.
+- **🧹 Cleanup Guide:** Identify files to archive/delete.
+- **📊 Team Reports:** Share folder statistics with colleagues.
+- **🔍 File Discovery:** Find file types you didn't know you had.
 
-#### For industries
-- **IT & Operations:** Monitor storage usage and identify large files quickly  
-- **Data & Analytics Teams:** Track dataset growth and storage distribution  
-- **Office & Corporate Teams:** Maintain organized shared drives  
-- **Creative & Media Teams:** Manage large video, image, and production files  
+#### Industry examples
+- 💻 **IT & Operations:** Monitor storage usage and identify large files quickly.  
+- 📊 **Data & Analytics Teams:** Track dataset growth and storage distribution.  
+- 🏢 **Office & Corporate Teams:** Maintain organized shared drives.  
+- 🎬 **Creative & Media Teams:** Manage large video, image, and production files.  
 
 ## 📊 Proof of Results
 
@@ -77,22 +75,22 @@ Example output includes:
 - Storage usage breakdown by size category  
 - Detailed statistics showing counts, percentages, and total storage size
 
-## 🎯 Roles & Skills Demonstrated
+## 🎯 Skills Demonstrated
 
 This project reflects practical capabilities in automation, data analysis, and business-focused problem-solving.
 
-- **Automation and process improvement:** Designed an automated workflow that replaces repetitive manual storage analysis tasks with a consistent, scalable solution.  
-- **Data analysis and reporting:** Collected and summarized file system data into clear visual reports for faster decision-making.  
-- **Business impact measurement and ROI thinking:** Quantified time savings and operational efficiency improvements, helping stakeholders focus on high-level tasks. 
-- **Clear documentation and stakeholder-focused design:** Created user-friendly instructions and report outputs that are accessible to both technical and non-technical audiences.  
+- 🔄 **Automation and process improvement:** Designed an automated workflow that replaces repetitive manual storage analysis tasks with a consistent, scalable solution.  
+- 📊 **Data analysis and reporting:** Collected and summarized file system data into clear visual reports for faster decision-making.  
+- 💰 **Business impact measurement and ROI thinking:** Quantified time savings and operational efficiency improvements, helping stakeholders focus on high-level tasks. 
+- 📘 **Documentation & Communication:** Created user-friendly instructions and report outputs that are accessible to both technical and non-technical audiences.  
 
 
 ## 🚀 Quick Start
 
-1. Download the Python script  
-2. Enter the folder path and email address in the Python script
-3. Run the Python script using the Command Line Interface
-4. Receive a professional PDF report within minutes  
+1. Download the Python script.  
+2. Enter the folder path and email address in the Python script.
+3. Run the Python script using the Command Line Interface.
+4. Receive a professional PDF report within minutes.  
 
 *Full setup instructions are available in [Technical Documentation](Technical-Documentation.md).*
 
