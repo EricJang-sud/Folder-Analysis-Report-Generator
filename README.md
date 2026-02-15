@@ -82,8 +82,8 @@ This project reflects practical capabilities in automation, data analysis, and b
 - 🔄 **Automation and process improvement:** Designed an automated workflow that replaces repetitive manual storage analysis tasks with a consistent, scalable solution.  
 - 📊 **Data analysis and reporting:** Collected and summarized file system data into clear visual reports for faster decision-making.  
 - 💰 **Business impact measurement and ROI thinking:** Quantified time savings and operational efficiency improvements, helping stakeholders focus on high-level tasks. 
-- 📘 **Documentation & Communication:** Created user-friendly instructions and report outputs that are accessible to both technical and non-technical audiences.  
-
+- 📘 **Documentation & Communication:** Created clear, user-focused documentation for both technical and non-technical users.
+- 👥 **Inclusive system design** Built a cross-platform solution designed for diverse users, ensuring compatibility across Windows, macOS, and Linux environments.
 
 ## 🚀 Quick Start
 
