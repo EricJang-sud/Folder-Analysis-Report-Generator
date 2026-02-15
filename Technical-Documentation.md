@@ -267,6 +267,149 @@ output_pdf = '/home/john/Desktop/report.pdf'
 ```
 </details>
 
+## 🔐 Security Notes
+
+### **Why Use a Dummy Gmail Account?**
+- ✅ Protects your personal email
+- ✅ Easy to disable if compromised
+- ✅ Separates automation from personal use
+
+### **Gmail App Password Security:**
+- 🔒 Never share your App Password
+- 🔒 Can be revoked anytime at [App Passwords](https://myaccount.google.com/apppasswords)
+- 🔒 Each script should have its own App Password
+
+## ⭐ Quick Examples
+
+### **Example 1: Analyze Downloads Folder**
+```python
+target_folder = 'C:/Users/Sarah/Downloads'
+recipient_email = 'sarah@gmail.com'
+sender_email = 'sarahs.automation@gmail.com'
+sender_password = 'wxyz abcd efgh ijkl'
+output_pdf = 'C:/Users/Sarah/Desktop/downloads_report.pdf'
+```
+
+### **Example 2: Weekly Project Reports**
+```python
+target_folder = 'Z:/Projects/Website2024'
+recipient_email = 'manager@company.com'
+sender_email = 'reports.bot@gmail.com'
+sender_password = 'mnop qrst uvwx yzab'
+output_pdf = 'Z:/Reports/weekly_report.pdf'
+```
+
+### **Example 3: Multiple Recipients**
+```python
+target_folder = '/Users/john/Projects'
+recipient_email = 'john@gmail.com,sarah@outlook.com,boss@yahoo.com'
+sender_email = 'johns.automation@gmail.com'
+sender_password = 'abcd efgh ijkl mnop'
+output_pdf = '/Users/john/Desktop/report.pdf'
+```
+
+## 🎯 Features at a Glance
+
+| Feature | Details |
+|---------|---------|
+| **File Analysis** | Scans all files in target folder and subfolders |
+| **File Types** | Shows top 10 most common file types |
+| **Size Categories** | Groups files as <1MB, 1MB-1GB, >1GB |
+| **Visual Charts** | Bar charts for quick insights |
+| **Detailed Tables** | Exact counts, percentages, total sizes |
+| **PDF Export** | Professional, formatted PDF report |
+| **Email Delivery** | Automatic email via Gmail SMTP |
+| **Unique Reports** | Each report has timestamp identifier |
+
+## 🖥️ Platform-Specific Quick Reference
+
+<details>
+<summary><b>🪟 Windows Users</b></summary>
+
+**Installation:**
+```bash
+# Install Python from python.org (check "Add to PATH"!)
+pip install matplotlib reportlab
+```
+
+**Common Paths:**
+```python
+target_folder = 'C:/Users/YourName/Documents'
+output_pdf = 'C:/Users/YourName/Desktop/report.pdf'
+```
+
+**Running:**
+```bash
+python folder_report_generator.py
+# or double-click the .py file
+```
+
+**Tips:**
+- ✅ Use `python -m pip` if pip doesn't work
+- ✅ Run Command Prompt as Administrator for permissions
+- ✅ Use forward slashes `/` in paths (not backslashes `\`)
+</details>
+
+<details>
+<summary><b>🍎 macOS Users</b></summary>
+
+**Installation:**
+```bash
+# Option 1: From python.org
+# Option 2: brew install python3
+pip3 install matplotlib reportlab
+```
+
+**Common Paths:**
+```python
+target_folder = '/Users/yourname/Documents'
+output_pdf = '/Users/yourname/Desktop/report.pdf'
+```
+
+**Running:**
+```bash
+python3 folder_report_generator.py
+```
+
+**Tips:**
+- ✅ Use `pip3` instead of `pip`
+- ✅ Use `python3` instead of `python`
+- ✅ Grant Full Disk Access in System Preferences if needed
+- ✅ Use `--user` flag if permission denied
+</details>
+
+<details>
+<summary><b>🐧 Linux Users</b></summary>
+
+**Installation:**
+```bash
+# Ubuntu/Debian (recommended - uses system packages)
+sudo apt-get install python3-matplotlib python3-reportlab
+
+# Fedora
+sudo dnf install python3-matplotlib
+pip3 install reportlab
+```
+
+**Common Paths:**
+```python
+target_folder = '/home/yourname/Documents'
+output_pdf = '/home/yourname/Desktop/report.pdf'
+```
+
+**Running:**
+```bash
+python3 folder_report_generator.py
+# or make executable: chmod +x folder_report_generator.py
+```
+
+**Tips:**
+- ✅ Use system package manager for easier installation
+- ✅ Use `pip3` with `--break-system-packages` on newer distros
+- ✅ Use `sudo` only if analyzing system folders
+- ✅ Choose folders you own to avoid permission issues
+</details>
+
 ## 🆘 Troubleshooting
 
 ### **"pip is not recognized" / "command not found: pip"**
@@ -632,149 +775,6 @@ output_pdf = '/tmp/report.pdf'
 - Verify `recipient_email` is correct
 - Wait a few minutes (delays can happen)
 - Gmail daily sending limit: ~100-500 emails
-
-## 🔐 Security Notes
-
-### **Why Use a Dummy Gmail Account?**
-- ✅ Protects your personal email
-- ✅ Easy to disable if compromised
-- ✅ Separates automation from personal use
-
-### **Gmail App Password Security:**
-- 🔒 Never share your App Password
-- 🔒 Can be revoked anytime at [App Passwords](https://myaccount.google.com/apppasswords)
-- 🔒 Each script should have its own App Password
-
-## ⭐ Quick Examples
-
-### **Example 1: Analyze Downloads Folder**
-```python
-target_folder = 'C:/Users/Sarah/Downloads'
-recipient_email = 'sarah@gmail.com'
-sender_email = 'sarahs.automation@gmail.com'
-sender_password = 'wxyz abcd efgh ijkl'
-output_pdf = 'C:/Users/Sarah/Desktop/downloads_report.pdf'
-```
-
-### **Example 2: Weekly Project Reports**
-```python
-target_folder = 'Z:/Projects/Website2024'
-recipient_email = 'manager@company.com'
-sender_email = 'reports.bot@gmail.com'
-sender_password = 'mnop qrst uvwx yzab'
-output_pdf = 'Z:/Reports/weekly_report.pdf'
-```
-
-### **Example 3: Multiple Recipients**
-```python
-target_folder = '/Users/john/Projects'
-recipient_email = 'john@gmail.com,sarah@outlook.com,boss@yahoo.com'
-sender_email = 'johns.automation@gmail.com'
-sender_password = 'abcd efgh ijkl mnop'
-output_pdf = '/Users/john/Desktop/report.pdf'
-```
-
-## 🎯 Features at a Glance
-
-| Feature | Details |
-|---------|---------|
-| **File Analysis** | Scans all files in target folder and subfolders |
-| **File Types** | Shows top 10 most common file types |
-| **Size Categories** | Groups files as <1MB, 1MB-1GB, >1GB |
-| **Visual Charts** | Bar charts for quick insights |
-| **Detailed Tables** | Exact counts, percentages, total sizes |
-| **PDF Export** | Professional, formatted PDF report |
-| **Email Delivery** | Automatic email via Gmail SMTP |
-| **Unique Reports** | Each report has timestamp identifier |
-
-## 🖥️ Platform-Specific Quick Reference
-
-<details>
-<summary><b>🪟 Windows Users</b></summary>
-
-**Installation:**
-```bash
-# Install Python from python.org (check "Add to PATH"!)
-pip install matplotlib reportlab
-```
-
-**Common Paths:**
-```python
-target_folder = 'C:/Users/YourName/Documents'
-output_pdf = 'C:/Users/YourName/Desktop/report.pdf'
-```
-
-**Running:**
-```bash
-python folder_report_generator.py
-# or double-click the .py file
-```
-
-**Tips:**
-- ✅ Use `python -m pip` if pip doesn't work
-- ✅ Run Command Prompt as Administrator for permissions
-- ✅ Use forward slashes `/` in paths (not backslashes `\`)
-</details>
-
-<details>
-<summary><b>🍎 macOS Users</b></summary>
-
-**Installation:**
-```bash
-# Option 1: From python.org
-# Option 2: brew install python3
-pip3 install matplotlib reportlab
-```
-
-**Common Paths:**
-```python
-target_folder = '/Users/yourname/Documents'
-output_pdf = '/Users/yourname/Desktop/report.pdf'
-```
-
-**Running:**
-```bash
-python3 folder_report_generator.py
-```
-
-**Tips:**
-- ✅ Use `pip3` instead of `pip`
-- ✅ Use `python3` instead of `python`
-- ✅ Grant Full Disk Access in System Preferences if needed
-- ✅ Use `--user` flag if permission denied
-</details>
-
-<details>
-<summary><b>🐧 Linux Users</b></summary>
-
-**Installation:**
-```bash
-# Ubuntu/Debian (recommended - uses system packages)
-sudo apt-get install python3-matplotlib python3-reportlab
-
-# Fedora
-sudo dnf install python3-matplotlib
-pip3 install reportlab
-```
-
-**Common Paths:**
-```python
-target_folder = '/home/yourname/Documents'
-output_pdf = '/home/yourname/Desktop/report.pdf'
-```
-
-**Running:**
-```bash
-python3 folder_report_generator.py
-# or make executable: chmod +x folder_report_generator.py
-```
-
-**Tips:**
-- ✅ Use system package manager for easier installation
-- ✅ Use `pip3` with `--break-system-packages` on newer distros
-- ✅ Use `sudo` only if analyzing system folders
-- ✅ Choose folders you own to avoid permission issues
-</details>
 
 ---
 
